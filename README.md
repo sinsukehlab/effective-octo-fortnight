@@ -193,7 +193,7 @@ Keep in mind that as you continue to use copilot, you may not want some of the s
 
 </details>
 
-<details id=4 open>
+<details id=4>
 <summary><h2>Step 4: Using comments to generate code with Copilot</h2></summary>
 
 _Nicely done utilizing the Copilot tab!_ :partying_face:
@@ -256,7 +256,7 @@ Now lets see how you can leverage comments to generate Copilot suggestions!
 
 </details>
 
-<details id=X>
+<details id=X open>
 <summary><h2>Finish</h2></summary>
 
 _Congratulations friend, you've completed this course!_
