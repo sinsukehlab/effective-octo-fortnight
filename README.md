@@ -136,7 +136,7 @@ Let's try this out utilizing Javascript for Copilot.
  
 </details>
 
-<details id=3 open>
+<details id=3>
 <summary><h2>Step 3: View the GitHub Copilot tab with multiple suggestions</h2></summary>
 
 _Nice work! You just used AI code suggestions within a Javascript file by using GitHub Copilot :sparkles:_
@@ -193,7 +193,7 @@ Keep in mind that as you continue to use copilot, you may not want some of the s
 
 </details>
 
-<details id=4>
+<details id=4 open>
 <summary><h2>Step 4: Using comments to generate code with Copilot</h2></summary>
 
 _Nicely done utilizing the Copilot tab!_ :partying_face:
