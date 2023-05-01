@@ -24,7 +24,7 @@ GitHub Copilot can help you code by offering autocomplete-style suggestions. You
 
 endstep0-->
 
-<details id=1 open>
+<details id=1>
 <summary><h2>Step 1: Leverage Codespaces with VS Code for Copilot</h2></summary>
 
 _Welcome to "	Develop With AI Powered Code Suggestions Using GitHub Copilot and VS Code"! :wave:_
@@ -82,7 +82,7 @@ Before you open up a codespace on a repository, you can create a development con
  
 </details>
 
-<details id=2>
+<details id=2 open>
 <summary><h2>Step 2: Seeing AI code suggestions in a Javascript file!</h2></summary>
 
 _Nice work! :tada: You created a Codespace using a devcontainer file that installed Copilot!_
