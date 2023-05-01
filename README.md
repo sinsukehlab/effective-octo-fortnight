@@ -82,7 +82,7 @@ Before you open up a codespace on a repository, you can create a development con
  
 </details>
 
-<details id=2 open>
+<details id=2>
 <summary><h2>Step 2: Seeing AI code suggestions in a Javascript file!</h2></summary>
 
 _Nice work! :tada: You created a Codespace using a devcontainer file that installed Copilot!_
@@ -136,7 +136,7 @@ Let's try this out utilizing Javascript for Copilot.
  
 </details>
 
-<details id=3>
+<details id=3 open>
 <summary><h2>Step 3: View the GitHub Copilot tab with multiple suggestions</h2></summary>
 
 _Nice work! You just used AI code suggestions within a Javascript file by using GitHub Copilot :sparkles:_
