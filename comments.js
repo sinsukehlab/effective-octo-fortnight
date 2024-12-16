@@ -1,13 +1,12 @@
-// Create web server
-// npm install express
-// npm install body-parser
-// npm install mongoose
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const authenticate = require('../authenticate');
-const cors = require('./cors')
+const cors = require('./cors');
+const DOMPurify = require('dompurify');
+const { JSDOM } = require('jsdom');
+const window = new JSDOM('').window;
+const purify = DOMPurify(window);
 
 const Comments = require('../models/comments');
 
@@ -29,6 +28,7 @@ commentRouter.route('/')
 })
 .post(cors.corsWithOptions, authenticate.verifyOrdinaryUser, authenticate.verifyAdmin, (req, res, next) => {
     if (req.body != null) {
+        req.body.comment = purify.sanitize(req.body.comment);
         Comments.create(req.body)
         .then((comment) => {
             Comments.findById(comment._id)
@@ -87,6 +87,7 @@ commentRouter.route('/:commentId')
                 return next(err);
             }
             req.body.author = req.user._id;
+            req.body.comment = purify.sanitize(req.body.comment);
             Comments.findByIdAndUpdate(req.params.commentId, {
                 $set: req.body
             }, { new: true })
@@ -134,4 +135,3 @@ commentRouter.route('/:commentId')
 });
 
 module.exports = commentRouter;
-// End of comments.js
